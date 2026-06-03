@@ -1,0 +1,152 @@
+MOVIE RECOMMENDATION SYSTEM
+
+=================================================
+
+1. PROJECT TITLE
+   =================================================
+
+Movie Recommendation System Using Content-Based Filtering
+
+=================================================
+2. OBJECTIVE
+============
+
+The objective of this project is to recommend movies similar to a movie selected by the user. The system uses movie genres and cosine similarity to find movies with similar characteristics.
+
+=================================================
+3. IMPORT LIBRARIES
+===================
+
+Libraries Used:
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+
+Purpose:
+
+These libraries help in data loading, data analysis, visualization, feature extraction, and recommendation generation.
+
+=================================================
+4. LOAD DATASET
+===============
+
+Dataset Used:
+
+MovieLens Dataset
+
+Files:
+
+* movies.csv
+* ratings.csv
+
+The dataset is loaded into Python using Pandas DataFrames.
+
+=================================================
+5. EXPLORATORY DATA ANALYSIS (EDA)
+==================================
+
+EDA was performed to understand the dataset.
+
+Tasks Performed:
+
+* Displayed first few rows
+* Checked dataset dimensions
+* Checked missing values
+* Analyzed movie genres
+* Analyzed ratings information
+
+=================================================
+6. DATA CLEANING
+================
+
+Data cleaning steps:
+
+* Removed duplicate records
+* Checked for missing values
+* Verified data consistency
+
+This ensures better recommendation accuracy.
+
+=================================================
+7. FEATURE EXTRACTION
+=====================
+
+The genres column was used as the feature.
+
+Example:
+
+Movie A: Adventure | Animation | Comedy
+
+Movie B: Adventure | Animation | Comedy
+
+Since both movies have similar genres, they are likely to be recommended together.
+
+CountVectorizer was used to convert text data into numerical vectors.
+
+=================================================
+8. COSINE SIMILARITY
+====================
+
+Cosine Similarity was used to measure similarity between movies.
+
+Movies with higher similarity scores are considered more related.
+
+Similarity values range from:
+
+0 = Completely Different
+
+1 = Exactly Similar
+
+=================================================
+9. RECOMMENDATION FUNCTION
+==========================
+
+A recommendation function was created to:
+
+1. Accept a movie name
+2. Find its index
+3. Calculate similarity scores
+4. Sort similar movies
+5. Display top recommended movies
+
+=================================================
+10. RESULTS
+===========
+
+Sample Input:
+
+Toy Story (1995)
+
+Sample Output:
+
+* Toy Story 2
+* Monsters Inc
+* Finding Nemo
+* Cars
+* Shrek
+
+The system successfully recommended movies based on genre similarity.
+
+=================================================
+11. CONCLUSION
+==============
+
+The Movie Recommendation System was successfully developed using Content-Based Filtering.
+
+The project demonstrates:
+
+* Data Analysis
+* Data Cleaning
+* Feature Engineering
+* Machine Learning Concepts
+* Recommendation Systems
+
+Future Improvements:
+
+* Use Collaborative Filtering
+* Use TMDB Dataset
+* Create a Web Application using Flask
+* Improve recommendation accuracy using user ratings
